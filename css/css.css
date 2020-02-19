@@ -10,7 +10,7 @@ body {
 }
 
 /* absolute position the map container as full screen, leaving 300 pixels on the left */
-#map-container {
+#map {
   position: absolute;
   top: 0;
   bottom: 0;

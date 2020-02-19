@@ -1,6 +1,6 @@
 // this is my mapboxGL token
 // the base style includes data provided by mapbox, this links the requests to my account
-mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWppYW5nMTEwIiwiYSI6ImNrNmxmM2EyYTBlYjMzZHRuZXIwNnR0MTcifQ.ZwubvNL5KrB47uW9--ggkw';
+mapboxgl.accessToken = 'pk.eyJ1IjoiY3dob25nLXFyaSIsImEiOiJjazZncWRkZGowb3kyM25vZXkwbms2cW0xIn0.lbwola6y7YDdaKLMdjif1g';
 
 // we want to return to this point and zoom level after the user interacts
 // with the map, so store them in variables
