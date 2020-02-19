@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset='utf-8' />
+      <title>🍕Pizza Map 🍕</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+      <link href='css/styles.css' rel='stylesheet' />
+  </head>
+  <body>
+    <!-- the sidebar is fixed width and will contain a title, some text, and buttons -->
+    <div id='sidebar'>
+    <h3>🍕Pizza Map 🍕</h3>
+
+    <p>My students all provided their favorite pizza places.</p>
+
+    <p>📍Click a marker to see the student's name and the name of the pizza joint.</p>
+
+    <hr/>
+
+    <p>Most of these are in NYC, but some are not.</p>
+    <p>👆Click the buttons below to fly to the non-nyc pizza places.</p>
+
+    <br/>
+    <!-- Buttons for flying the map -->
+    <button class='flyto-button' id="china">✈️ China</button>
+    <br/>
+
+    <button class='flyto-button' id="michigan">✈️ Michigan, USA</button>
+    <br/>
+
+    <button class='flyto-button' id="colombia">✈️ Colombia</button>
+    <br/>
+
+    <button class='flyto-button' id="nyc">🗽 Go to where there is actually good pizza</button>
+    </div>
+
+    <!-- this is the map container, which will hold the mapboxGL map -->
+    <div id='map-container'></div>
+
+    <!-- Load mapboxGL, jQuery, then our local javascript files -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src='js/data.js'></script>
+    <script src='js/scripts.js'></script>
+
+  </body>
+</html>
