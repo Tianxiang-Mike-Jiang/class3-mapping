@@ -1,10 +1,9 @@
-var studentData = [
+var apartmentData = [
   {
-    "name": "Chris",
-    "pizza_place": "Ben's Pizza",
-    "longitude": -74.0027456,
-    "latitude": 40.7302075,
-    "program": "Wagner"
+    "apartmentName": "Jackson Park",
+    "longitude": -73.9436059,
+    "latitude": 40.7457593,
+    "Website": "jacksonparklic.com"
   },
   {
     "name": "Mikeala",

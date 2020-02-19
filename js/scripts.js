@@ -1,11 +1,11 @@
-// this is my mapboxGL token
+apartmentData// this is my mapboxGL token
 // the base style includes data provided by mapbox, this links the requests to my account
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWppYW5nMTEwIiwiYSI6ImNrNnR2bnZmNTAzZ3Azb3Izd3ExOW9obmUifQ.1gPI_5WBiSt3GwqrGk_S8g';
 
 // we want to return to this point and zoom level after the user interacts
 // with the map, so store them in variables
-var initialCenterPoint = [-73.987, 40.735]
-var initialZoom = 10.67
+var initialCenterPoint = [-74.0014762,40.7505189]
+var initialZoom = 15
 
 
 // create an object to hold the initialization options for a mapboxGL map
@@ -30,13 +30,13 @@ map.addControl(new mapboxgl.NavigationControl());
    .addTo(map);
 
 
-// iterate over each object in studentData
-studentData.forEach(function(studentEntry) {
-  // for each object in the studentData, add a marker to the map with a popup
+// iterate over each object in apartmentData
+apartmentData.forEach(function(appartmentEntry) {
+
   new mapboxgl.Marker()
-    .setLngLat([studentEntry.longitude, studentEntry.latitude])
+    .setLngLat([apartmentEntry.longitude, apartmentEntry.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-     .setHTML(`${studentEntry.name} thinks ${studentEntry.pizza_place} is the best pizza in the world!`))
+     .setHTML(`${apartmentEntry.apartmentName} thinks ${apartmentEntry.pizza_place} is the best pizza in the world!`))
     .addTo(map);
 })
 
