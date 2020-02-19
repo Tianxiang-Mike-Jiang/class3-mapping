@@ -20,7 +20,7 @@ body {
 
 h3 {
   margin-top: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /* blue buttons with white bold text */
@@ -47,7 +47,7 @@ button:hover {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 300px;
+  width: 350px;
   background-color: #0a99c3;
   color: #FFF;
   padding: 25px;
