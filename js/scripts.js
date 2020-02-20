@@ -5,7 +5,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWppYW5nMTEwIiwiYSI6ImNrNnR2bnZmNTAzZ3Azb
 // we want to return to this point and zoom level after the user interacts
 // with the map, so store them in variables
 var initialCenterPoint = [-74.0014762,40.7505189]
-var initialZoom = 15
+var initialZoom = 13
 
 
 // create an object to hold the initialization options for a mapboxGL map
@@ -22,13 +22,6 @@ var map = new mapboxgl.Map(initOptions);
 // add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
-// make a single marker in central park
- new mapboxgl.Marker()
-   .setLngLat([-73.974087,40.770718])
-   .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-    .setHTML('I am in Central Park'))
-   .addTo(map);
-
 
 // iterate over each object in apartmentData
 apartmentData.forEach(function(apartmentEntry) {
@@ -36,7 +29,7 @@ apartmentData.forEach(function(apartmentEntry) {
   new mapboxgl.Marker()
     .setLngLat([apartmentEntry.longitude, apartmentEntry.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-     .setHTML(`Want to learn more about${apartmentEntry.apartmentName}, please visit ${apartmentEntry.Website}.`))
+     .setHTML(`Want to learn more about <b>${apartmentEntry.apartmentName}</b>, please visit <a href="${apartmentEntry.Website}">${apartmentEntry.Website}</a>`))
     .addTo(map);
 })
 
@@ -49,18 +42,17 @@ $('#newport').on('click', function() {
   })
 })
 
-$('lic').on('click', function() {
+$('#lic').on('click', function() {
 
-  var longislandcitypoint = [-73.9535595,40.7460247]
 
   map.flyTo({
-    center: longislandcitypoint,
+    center: [-73.9468553,40.748523],
     zoom: initialZoom
   })
 })
 
 $('#bk').on('click', function() {
-  var brooklynpoint = [-74.0435347,40.6265653]
+  var brooklynpoint = [-73.9854956,40.6869778]
 
   map.flyTo({
     center: brooklynpoint,
