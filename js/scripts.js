@@ -26,7 +26,7 @@ apartmentData.forEach(function(apartmentEntry) {
   new mapboxgl.Marker()
     .setLngLat([apartmentEntry.longitude, apartmentEntry.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25}) // add popups
-     .setHTML(`Want to learn more about <b>${apartmentEntry.apartmentName}</b>, Please visit <a href="${apartmentEntry.Website}">${apartmentEntry.Website}</a>`))
+     .setHTML(`Want to learn more about <b>${apartmentEntry.apartmentName}</b>, Please visit <a href="www.${apartmentEntry.Website}">${apartmentEntry.Website}</a>`))
     .addTo(map);
 })
 
