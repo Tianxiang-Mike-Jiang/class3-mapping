@@ -1,29 +1,26 @@
-// this is my mapboxGL token
-// the base style includes data provided by mapbox, this links the requests to my account
+
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWppYW5nMTEwIiwiYSI6ImNrNnR2bnZmNTAzZ3Azb3Izd3ExOW9obmUifQ.1gPI_5WBiSt3GwqrGk_S8g';
 
-// we want to return to this point and zoom level after the user interacts
-// with the map, so store them in variables
+
 var initialCenterPoint = [-74.0014762,40.7505189]
 var initialZoom = 13
 
 
-// create an object to hold the initialization options for a mapboxGL map
+
 var initOptions = {
-  container: 'map-container', // put the map in this container
-  style: 'mapbox://styles/mapbox/dark-v10', // use this basemap
-  center: initialCenterPoint, // initial view center
-  zoom: initialZoom, // initial view zoom level (0-18)
+  container: 'map-container',
+  style: 'mapbox://styles/mapbox/light-v10', 
+  center: initialCenterPoint,
+  zoom: initialZoom,
 }
 
-// create the new map
+
 var map = new mapboxgl.Map(initOptions);
 
-// add zoom and rotation controls to the map.
+
 map.addControl(new mapboxgl.NavigationControl());
 
 
-// iterate over each object in apartmentData
 apartmentData.forEach(function(apartmentEntry) {
 
   new mapboxgl.Marker()
@@ -33,7 +30,7 @@ apartmentData.forEach(function(apartmentEntry) {
     .addTo(map);
 })
 
-// event listeners for the fly to buttons
+
 
 $('#newport').on('click', function() {
   map.flyTo({
