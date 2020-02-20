@@ -1,4 +1,4 @@
-apartmentData// this is my mapboxGL token
+// this is my mapboxGL token
 // the base style includes data provided by mapbox, this links the requests to my account
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWppYW5nMTEwIiwiYSI6ImNrNnR2bnZmNTAzZ3Azb3Izd3ExOW9obmUifQ.1gPI_5WBiSt3GwqrGk_S8g';
 
@@ -31,7 +31,7 @@ map.addControl(new mapboxgl.NavigationControl());
 
 
 // iterate over each object in apartmentData
-apartmentData.forEach(function(appartmentEntry) {
+apartmentData.forEach(function(apartmentEntry) {
 
   new mapboxgl.Marker()
     .setLngLat([apartmentEntry.longitude, apartmentEntry.latitude])
