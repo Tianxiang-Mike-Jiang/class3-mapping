@@ -42,28 +42,28 @@ apartmentData.forEach(function(appartmentEntry) {
 
 // event listeners for the fly to buttons
 
-$('#china').on('click', function() {
+$('#newport').on('click', function() {
   map.flyTo({
-    center: [112.556005, 37.818758],
+    center: [-74.0478106,40.7238993],
     zoom: initialZoom
   })
 })
 
-$('#michigan').on('click', function() {
+$('lic').on('click', function() {
 
-  var michiganLngLat = [-83.10538, 42.50448]
+  var longislandcitypoint = [-73.9535595,40.7460247]
 
   map.flyTo({
-    center: michiganLngLat,
+    center: longislandcitypoint,
     zoom: initialZoom
   })
 })
 
-$('#colombia').on('click', function() {
-  var colombiaLngLat = [-73.997208, 0.721615]
+$('#bk').on('click', function() {
+  var brooklynpoint = [-74.0435347,40.6265653]
 
   map.flyTo({
-    center: colombiaLngLat,
+    center: brooklynpoint,
     zoom: initialZoom
   })
 })
