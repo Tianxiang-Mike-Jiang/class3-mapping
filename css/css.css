@@ -61,7 +61,3 @@ font-family: 'Open Sans', sans-serif;
 .mapboxgl-popup{
   width: 300px
 }
-
-#Marker{
-   background-image: url('mapbox-icon.png')
-}
