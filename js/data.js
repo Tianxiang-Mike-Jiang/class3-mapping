@@ -30,32 +30,32 @@ var apartmentData = [
     "Website": "theeugenenyc.com"
   },
   {
-    "apartmentName": "The Eugene",
-    "longitude": -74.009976,
-    "latitude": 40.749064,
-    "Website": "theeugenenyc.com"
-  },
-  {
-    "apartmentName": "The Eugene",
-    "longitude": -74.009976,
-    "latitude": 40.749064,
-    "Website": "theeugenenyc.com"
-  },
-  {
-    "apartmentName": "The Eugene",
-    "longitude": -74.009976,
-    "latitude": 40.749064,
-    "Website": "theeugenenyc.com"
-  },
-  {
-    "apartmentName": "The Eugene",
-    "longitude": -74.009976,
-    "latitude": 40.749064,
-    "Website": "theeugenenyc.com"
-  },
-  {
-    "apartmentName": "The Eugene",
-    "longitude": -74.009976,
-    "latitude": 40.749064,
-    "Website": "theeugenenyc.com"
-  }]
+      "apartmentName": "Hayden LIC Apartments",
+      "longitude": -73.944571,
+      "latitude": 40.7478221,
+      "Website": "rockrose.com"
+    },
+    {
+      "apartmentName": "Sky",
+      "longitude": -74.0053669,
+      "latitude": 40.760067,
+      "Website": "liveatsky.com"
+    },
+    {
+      "apartmentName": "555Ten",
+      "longitude": -73.9986635,
+      "latitude": 40.7587613,
+      "Website": "555ten.com"
+    },
+    {
+      "apartmentName": "American Copper",
+      "longitude": -73.9741716,
+      "latitude": 40.7445535,
+      "Website": "americancopper.nyc"
+    },
+    {
+      "apartmentName": "The Eagle",
+      "longitude": -73.9881768,
+      "latitude": 40.6933809,
+      "Website": "eagle86fleet.com"
+    }]
