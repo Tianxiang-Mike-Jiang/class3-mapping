@@ -53,3 +53,11 @@ button:hover {
   padding: 25px;
   box-sizing: border-box;
 }
+
+.mapboxgl-popup-content{
+  text-align: center;
+font-family: 'Open Sans', sans-serif;
+}
+.mapboxgl-popup{
+  width: 300px
+}

@@ -7,8 +7,8 @@ var apartmentData = [
   },
   {
     "apartmentName": "The Lewis Rentals",
-    "longitude": -74.003098,
-    "latitude": 40.7538167,
+    "longitude": -73.998609,
+    "latitude": 40.7545157,
     "Website": "thelewisrentals.com"
   },
   {
@@ -25,8 +25,8 @@ var apartmentData = [
   },
   {
     "apartmentName": "The Eugene",
-    "longitude": -74.009976,
-    "latitude": 40.749064,
+    "longitude": -74.001036,
+    "latitude": 40.752277,
     "Website": "theeugenenyc.com"
   },
   {
@@ -37,8 +37,8 @@ var apartmentData = [
     },
     {
       "apartmentName": "Sky",
-      "longitude": -74.0053669,
-      "latitude": 40.760067,
+      "longitude": -74.0009595,
+      "latitude": 40.7614671,
       "Website": "liveatsky.com"
     },
     {
